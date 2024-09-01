@@ -3,31 +3,62 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --foreground-rgb: 0, 0, 0;
+    --background-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@media (prefers-color-scheme: light) {
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-rgb: 0, 0, 0;
+    }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    color: rgb(var(--foreground-rgb));
+    background: rgb(var(--background-rgb));
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+@layer components {
+    .default-button {
+        background-color: #e8ae45;
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+    }
+
+    .default-input-text {
+        padding: 0.5rem;
+        border: 0 solid black;
+        border-radius: 0.3rem;
+        outline: none;
+        background-color: bisque;
+    }
+
+    .default-input-text-small {
+        padding: 0.0rem;
+        border: 0 solid black;
+        border-radius: 0.2rem;
+        outline: none;
+        background-color: bisque;
+    }
+
+    .default-textarea {
+        background-color: bisque;
+    }
+
+    .default-h1 {
+        font-size: 2rem;
+        color: #a4731b;
+    }
+
+    .default-h2 {
+        font-size: 1.5rem;
+        color: #b37e1d;
+    }
 }
