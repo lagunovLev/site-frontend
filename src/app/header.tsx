@@ -1,6 +1,6 @@
 'use client'
 import Link from "next/link";
-import { RegisteredMenu, UnregisteredMenu } from "./headerMenu.tsx";
+import { RegisteredMenu, UnregisteredMenu } from "./headerMenu";
 import {useEffect, useState} from "react";
 import {useStore} from "@/app/store/store";
 
