@@ -30,7 +30,7 @@ export default function Home() {
         <h1 className="self-center default-h1 mb-3 mt-4">Добавить статью</h1>
         <div className="self-center">
             <div className="flex flex-row mb-2 justify-between"><label>Заголовок:</label><input type="text" className="default-input-text-small w-80 ml-5" onChange={text => setTitle(text.target.value)}/></div>
-            <div className="flex flex-row mb-2 justify-between"><label>Текст:</label><textarea rows="15" cols="40" className="default-textarea" onChange={text => setText(text.target.value)}/></div>
+            <div className="flex flex-row mb-2 justify-between"><label>Текст:</label><textarea rows={15} cols={40} className="default-textarea" onChange={text => setText(text.target.value)}/></div>
             <button className="default-button mt-9" onClick={sendPost}>Создать</button>
         </div>
     </>
