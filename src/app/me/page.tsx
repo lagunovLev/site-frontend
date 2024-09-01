@@ -4,7 +4,7 @@ import axios from "axios";
 import {server} from "@/app/hardcodedValues";
 import {useStore} from "@/app/store/store";
 
-export default () => {
+export default function Home() {
     const token = useStore(state => state.token);
 
     const [state, setState] = useState("view");

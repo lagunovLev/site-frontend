@@ -1,7 +1,7 @@
 'use client'
 import {useStore} from "@/app/store/store";
 
-export default () => {
+export default function Home() {
     const state = useStore(state => state);
 
     return <>

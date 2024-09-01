@@ -5,7 +5,7 @@ import {server} from "@/app/hardcodedValues";
 import {useEffect, useState} from "react";
 import {useStore} from "@/app/store/store";
 
-export default ({ params }: { params: { id: string } }) => {
+export default function Home({ params }: { params: { id: string } }) {
     const user_id = useStore(state => state.user_id);
     const router = useRouter();
     const post_id = params.id;

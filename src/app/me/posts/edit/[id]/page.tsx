@@ -5,7 +5,7 @@ import {useRouter} from "next/navigation";
 import axios from "axios";
 import {server} from "@/app/hardcodedValues";
 
-export default ({ params }: { params: { id: string } }) => {
+export default function Home({ params }: { params: { id: string } }) {
     const token = useStore(state => state.token);
     const router = useRouter();
     const [post, setPost] = useState({});

@@ -6,7 +6,7 @@ import {useStore} from "@/app/store/store";
 import {redirect} from "next/navigation";
 import {useRouter} from "next/navigation";
 
-export default () => {
+export default function Home() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");

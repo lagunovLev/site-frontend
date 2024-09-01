@@ -4,7 +4,7 @@ import { RegisteredMenu, UnregisteredMenu } from "./headerMenu.tsx";
 import {useEffect, useState} from "react";
 import {useStore} from "@/app/store/store";
 
-export default () => {
+export default function Home() {
     const [dropdownState, setDropdownState] = useState(false);
 
     const handleClick = () => {

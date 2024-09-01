@@ -6,7 +6,7 @@ import {useRouter} from "next/navigation";
 import {useStore} from "@/app/store/store";
 
 
-export default ({ params }: { params: { id: string } }) => {
+export default function Home({ params }: { params: { id: string } }) {
     const router = useRouter();
     const token = useStore(state => state.token);
     const post_id = params.id;

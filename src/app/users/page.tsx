@@ -4,7 +4,7 @@ import {server} from "@/app/hardcodedValues";
 import {useEffect, useState} from "react";
 import {useRouter} from "next/navigation";
 
-export default () => {
+export default function Home() {
     const [users, setUsers] = useState([]);
     const router = useRouter();
 

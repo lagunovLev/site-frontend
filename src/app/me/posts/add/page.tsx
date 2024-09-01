@@ -5,7 +5,7 @@ import {useState} from "react";
 import axios from "axios";
 import {server} from "@/app/hardcodedValues";
 
-export default () => {
+export default function Home() {
     const token = useStore(state => state.token);
     const router = useRouter();
     const [post, setPost] = useState({});

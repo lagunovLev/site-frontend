@@ -5,7 +5,7 @@ import {useEffect, useState} from "react";
 import {useStore} from "@/app/store/store";
 import {useRouter} from "next/navigation";
 
-export default ({ params }: { params: { id: string } }) => {
+export default function Home({ params }: { params: { id: string } }) {
     const me_id = useStore(state => state.user_id);
     const router = useRouter();
     const user_id = params.id;

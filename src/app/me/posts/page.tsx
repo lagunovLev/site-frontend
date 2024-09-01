@@ -6,7 +6,7 @@ import {useEffect, useState} from "react";
 import Image from "next/image";
 import {useRouter} from "next/navigation";
 
-export default () => {
+export default function Home() {
     const token = useStore(state => state.token);
     const [posts, setPosts] = useState([]);
     const router = useRouter()
