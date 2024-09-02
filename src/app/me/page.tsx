@@ -5,6 +5,13 @@ import {server} from "@/app/hardcodedValues";
 import {useStore} from "@/app/store/store";
 
 export default function Home() {
+    //interface UserData {
+    //    fullName: string,
+    //    email: string,
+    //    avatarUrl: string,
+    //    password?: string,
+    //}
+
     const token = useStore(state => state.token);
 
     const [state, setState] = useState("view");
@@ -15,7 +22,7 @@ export default function Home() {
         password: "",
     });
 
-    const setFullName = (name) => setUserData({ ...userData, fullName: name })
+    const setFullName = (name) => setUserData({...userData, fullName: name})
     const setEmail = (email) => setUserData({ ...userData, email: email })
     const setAvatarUrl = (url) => setUserData({ ...userData, avatarUrl: url })
     const setPassword = (pswrd) => setUserData({ ...userData, password: pswrd })
