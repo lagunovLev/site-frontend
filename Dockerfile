@@ -5,7 +5,7 @@ COPY package-lock.json ./
 COPY package.json ./
 RUN npm ci
 COPY . .
-RUN npm build
+RUN npm run build
 
 FROM nginx:stable
 COPY --from=build /dist /usr/share/nginx/html
