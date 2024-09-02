@@ -1,1 +1,1 @@
-export const server = process.env.API_URL;
+export const server = process.env.API_URL || "https://test-site-backend.onrender.com/";
